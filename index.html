@@ -1,155 +1,449 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Rabbit : Home</title>
-        <link rel="icon" type="image/icon" href="assets/images/tabicon.ico">
+<head>
+    <title>Portfolio Website</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- linking css file -->
+    <link rel="stylesheet" href="style.css">
+    <!-- bootstrap CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/31149d48b0.js" crossorigin="anonymous"></script>
+</head>
 
-        <link rel="stylesheet" type="text/css" href="">
-        <link href="assets/css/bootstrap.min.css" rel="stylesheet">
-        <link href="assets/css/bootstrap-theme.min.css" rel="stylesheet">
-        <link href="assets/css/font-awesome.min.css" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,700,700i" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Crimson+Text:400,700,700i|Josefin+Sans:700" rel="stylesheet">
-        <link href="assets/css/main.css" rel="stylesheet">
-        <link rel="icon" href="assets/images/logo.png">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
-        
-    </head>
+<body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark navbarScroll">
+        <div class="container">
+            <a class="navbar-brand" href="./files/Chaitanya_Tyagi_Resume.pdf"
+                download="Chaitanya_Tyagi_Resume">Resume</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Work</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#portfolio">Articles</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
 
-    <body>
-        <div id="index">                                           <!-- Index starts here -->
-            <div class="container main">
-                <div class="row home">
-                    <div id = "index_left" class="col-md-6 left">
-                        <img class="img-responsive img-rabbit" src="assets/images/home3.jpg">
-                    </div>
-                    <div id = "index_right" class="col-md-6 text-center right">
-                        <div class="logo">
-                            <img src="assets/images/logo.png">
-                            <h4>I am a Rabbit</h4>
-                        </div>
-                        <p class="home-description">
-                            I am a software developer passionate about creating. 
-                            A software developer should never back down from learning and therefore I try to learn a new skill every day. 
-                            I am very enthusiastic about open source development and I always try to contribute to the community. 
-                            To keep on writing, learning and working with a team on a tech project is something that I can do every single day.
-                        </p>
-                        <div class="btn-group-vertical custom_btn animated slideinright">
-                            <div id="work" class="btn btn-rabbit">Work</div>
-                            <div id="about" class="btn btn-rabbit">Achievements</div>
-                        </div>      
-                        <div class="social">
-                            <a href="https://www.linkedin.com/in/chaitanya-tyagi-03a560174/"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-                            <a href="https://twitter.com/chay2199"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                        </div>
-                    </div>
-                </div>
-
-                
             </div>
-        </div>                                                      <!-- index ends here -->
+        </div>
+    </nav>
+    <!-- main banner -->
+    <section class="bgimage" id="home">
+        <div class="row">
+            <div class="typing">
+                <h2 class="text-uppercase">Welcome..</h2>
+                <h3 class="text-uppercase"><i>“Always code as if the guy who ends up maintaining your code<br>
+                        will be a violent psychopath who knows where you live."</i></h3>
+            </div>
+        </div>
+        </div>
+    </section>
 
-        <div id="about_scroll" class="pages ">                      <!-- about strats here  -->
-            <div class="container main">
-                <div class="row">
-                    <div class="col-md-6 left" id="about_left">
-                        <img class="img-responsive img-rabbit" src="assets/images/suit.jpg">
+    <!-- about section-->
+    <div class="p-4 mb-4 bg-dark text-white">
+        <section id="about">
+            <div class="container mt-4 pt-4 bg-dark text-white">
+                <h1 class="text-center text-warning">About Me</h1>
+                <div class="row mt-4">
+                    <div class="col-lg-4">
+                        <img src="images/about.jpg" class="imageAboutPage" alt="">
                     </div>
 
-                    <div class="col-md-6 right" id="about_right">
-                        <a href="#index" class="btn btn-rabbit back"> <i class="fa fa-angle-left" aria-hidden="true"></i> Back to home </a>
-                        <div id="watermark">
-                            <h2 class="page-title" text-center>Achievements</h2>
-                            <div class="marker">a</div>
+                    <div class="col-lg-8">
+                        <div class="row mt-3">
+                            <div class="col-md-6">
+                                <ul style="list-style-type:circle;">
+                                    <li>Name: Chaitanya Tyagi</li>
+                                    <li>Age: 24</li>
+                                    <li>Occupation: Loving Code.</li>
+
+                                </ul>
+                            </div>
                         </div>
-                        <hr>
-                        <p class='subtitle'>
-                            <u>2020</u>&nbsp;&nbsp;&nbsp;&nbsp;Reached Gold level at HackerRank problem solving<br>
-                            <u>2019</u>&nbsp;&nbsp;&nbsp;&nbsp;Published coala-json, a pypi package (more than &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;10,000 downloads and counting)<br>
-                            <u>2019</u>&nbsp;&nbsp;&nbsp;&nbsp;Successfully Completed Google Summer of Code’19 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;with coala<br>
-                            <u>2019</u>&nbsp;&nbsp;&nbsp;&nbsp;Published 6 articles on GeeksForGeeks platform<br>
-                            <u>2018</u>&nbsp;&nbsp;&nbsp;&nbsp;15th in HackABit (East India’s Largest Hackathon)<br>
-                            <u>2018</u>&nbsp;&nbsp;&nbsp;&nbsp;Secured 2nd Position in GitHeat (Open Source &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Development Competition organized by IET)<br>
-                        </p>
-                        <hr>
-                        <h2 class="page-title" text-center>Certifications</h2>
-                        <p class='subtitle'>
-                            <ul style="list-style-type:square">
-                                <h4><li>Front-End Web Development With React</li></h4>
-                            </ul>
-                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Issuing authority The Hong Kong University of Science and Technology
-                            <ul style="list-style-type:square">
-                                <h4><li>Server-side Development with NodeJS, Express and MongoDB</li></h4>
-                            </ul>
-                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Issuing authority The Hong Kong University of Science and Technology
-                            <ul style="list-style-type:square">
-                                <h4><li>MLOps Training - Applying Machine Learning on DevOps</li></h4>
-                            </ul>
-                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Issuing authority LinuxWorld Informatics Pvt Ltd
-                            <ul style="list-style-type:square">
-                                <h4><li>ICSI | CNSS Certified Network Security Specialist</li></h4>
-                            </ul>
-                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Issuing authority ICSI (International CyberSecurity Institute), UK
-                        </p>
-                        * You can check about the authentication of these Certifications on my LinkedIn profile.
+                        <div class="row mt-3">
+                            <p> Software Engineer with 2+ years of experience writing backend APIs, cloud technology,
+                                and microservices design.
+                                I have honed my skills in computer languages and frameworks such as Go, Python, and AWS.
+                                I am passionate
+                                about learning and collaborating. With a quick learning ability, an agile mindset, and
+                                proficiency in English, I am
+                                dedicated to delivering high-quality work. I am excited to bring my technical expertise
+                                and enthusiasm to work.
+                            </p>
+                        </div>
+                        <div class="row mt-3">
+                            <div class="col-lg-4 mt-4 text-center">
+                                <a href="https://www.credly.com/earner/earned/badge/8d7c5c6d-6f5e-4dee-b82f-a870a90ddd9b"
+                                    class="stretched-link link-light">
+                                    <div class="card cards servicesText bg-dark">
+                                        <div class="card-body bg-dark">
+                                            <img class="card-img-bottom embed-responsive-item" src="images/sap.png" />
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-lg-4 mt-4 text-center">
+                                <a href="https://www.credly.com/earner/earned/badge/80f75433-eb6d-488a-89d6-5b621b8dfda1"
+                                    class="stretched-link link-light">
+                                    <div class="card cards servicesText bg-dark">
+                                        <div class="card-body bg-dark">
+                                            <img class="card-img-bottom embed-responsive-item" src="images/ckad.png" />
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-lg-4 mt-4 text-center">
+                                <a href="https://www.credly.com/earner/earned/badge/23e25a6e-a095-4e90-b287-d9fa41f67d18"
+                                    class="stretched-link link-light">
+                                    <div class="card cards servicesText bg-dark">
+                                        <div class="card-body bg-dark">
+                                            <img class="card-img-bottom embed-responsive-item" src="images/das.png" />
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="row mt-3 p-4">
+                            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                                <div class="carousel-indicators">
+                                    <button type="button" data-bs-target="#carouselExampleIndicators"
+                                        data-bs-slide-to="0" class="active" aria-current="true"
+                                        aria-label="Slide 1"></button>
+                                    <button type="button" data-bs-target="#carouselExampleIndicators"
+                                        data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                </div>
+                                <div class="carousel-inner bg-dark">
+                                    <div class="carousel-item active text-center">
+                                        <h4><a class="text-warning link-white"
+                                                href="https://www.linkedin.com/in/li-boxuan"><u>Boxuan
+                                                    LiBoxuan Li, SDE 2 Microsoft Redmond, USA</u></a></h4>
+                                        <p class="p-4">I was Chaitanya's mentor for Google Summer of Code.
+                                            He
+                                            was a quick learner,
+                                            motivated, and capable of handling ambiguous tasks. His proposal was the
+                                            best
+                                            and most organized among all the candidates, which is why our open-source
+                                            organization selected him. His hard work and deliverables proved he was not
+                                            just
+                                            good at writing proposals :-)
+                                        </p>
+
+                                    </div>
+                                    <div class="carousel-item text-center">
+                                        <h4><a class="text-warning link-white"
+                                                href="https://www.linkedin.com/in/ashutosh-kumar-9a109864"><u>Ashutosh
+                                                    Kumar, Software Development Manager at CommerceIQ</u></a></h4>
+                                        <p class="p-4">
+                                            I had the pleasure of working with Chaitanya for around 2 years at
+                                            CommerceIQ.
+                                            Chaitanya is a highly focused person and can add to any team he is a part
+                                            of.
+                                            During his 2 years tenure at CIQ, his contributions were spread across
+                                            multiple
+                                            teams and projects - DevOps, data platform, and market share application and
+                                            he
+                                            nailed it every time. He is a rational thinker and a hard-working individual
+                                            who
+                                            always have a constant appetite for learning new things, be it development
+                                            learning new technology, or cloud solutions. His work ethic is immaculate
+                                            and so
+                                            he is very easy to work with. He even goes out of his way when you ask for
+                                            any
+                                            help and guidance - we did a lot of successful POCs together. He has always
+                                            been
+                                            an asset to the team where he is in.
+                                        </p>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        </section>
+
+        <!-- services section-->
+        <section id="services">
+            <div class="container bg-dark text-white">
+                <h1 class="text-center text-warning">Work Experience</h1>
+                <div class="row">
+                    <div class="col-lg-4 mt-4">
+                        <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#staticBackdrop1">
+                            <div class="card servicesText bg-dark">
+                                <div class="card-body bg-dark">
+                                    <img class="card-img-top embed-responsive-item" src="images/amagi.gif" />
+                                </div>
+                            </div>
+                        </button>
+                    </div>
+                    <!-- Modal -->
+                    <div class="modal fade" id="staticBackdrop1" data-bs-backdrop="static" data-bs-keyboard="false"
+                        tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                            <div class="modal-content bg-dark">
+                                <div class="modal-header border-0">
+                                    <h5 class="modal-title text-warning" id="staticBackdropLabel">Developer At Amagi
+                                        Media Labs</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body text-white">
+                                    Currently, I am working on an exciting project at Amagi Media Labs, where I am
+                                    developing an
+                                    extensive authentication and authorization system that will be implemented across
+                                    the organization.
+                                    Additionally, I am creating a control plane dashboard that will enable our clients
+                                    to register their
+                                    products with various logical constructs such as workspaces, roles, users, and more.
+                                    These efforts will
+                                    significantly enhance the user experience while enabling more efficient management
+                                    of the products
+                                    and resources. I am thrilled to be a part of this initiative and look forward to
+                                    contributing my skills and
+                                    expertise to its successful completion.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 mt-4">
+                        <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#staticBackdrop2">
+                            <div class="card servicesText bg-dark">
+                                <div class="card-body bg-dark">
+                                    <img class="card-img-top embed-responsive-item" src="images/ciq.gif" />
+                                </div>
+                            </div>
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="staticBackdrop2" data-bs-backdrop="static" data-bs-keyboard="false"
+                            tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                                <div class="modal-content bg-dark">
+                                    <div class="modal-header border-0">
+                                        <h5 class="modal-title text-warning" id="staticBackdropLabel">SDE At CommerceIQ
+                                        </h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body text-white">
+                                        <b>Projects undertaken during my tenure at CommerceIQ:</b><br>
+                                        New Client Setup Revamp: Successfully revamped the new client setup process,
+                                        saving the team
+                                        hours of work on a daily basis. By creating an SQL dump and implementing
+                                        parallel setups, we are now
+                                        8x times more efficient, enabling us to deliver top-quality service to our
+                                        clients while streamlining our
+                                        internal operations.
+                                        Market Share Pipeline: I collaborated with the Data Science team to modularize
+                                        their monolithic
+                                        Jupyter notebooks into a Python framework for their market share analytics
+                                        offering that utilizes ML
+                                        models. This implementation streamlined their code review and release process,
+                                        ensuring conflict free development. In addition, I designed a pipeline using
+                                        SageMaker Processing Jobs and AWS
+                                        Step Functions to collect data and run the ML models. The pipeline supported
+                                        dynamic inputs, proper
+                                        logging, notifications, scheduling, and monitoring. Through this project, I
+                                        demonstrated my expertise
+                                        in AWS and Python, as well as my ability to collaborate effectively across teams
+                                        to deliver successful
+                                        solutions.
+                                        AVC Service: I created a microservice in JAVA called AVC Service. This powerful
+                                        tool integrates
+                                        directly with Amazon's APIs, allowing us to download reports and ingest data
+                                        into our databases quickly
+                                        and efficiently. By removing our dependency on scraping, we significantly
+                                        increased the speed and
+                                        accuracy of our data ingestion process, enhancing the overall performance of our
+                                        platform.
+                                        <br><br>
+                                        <b>As SDE intern At CommerceIQ:</b>
+                                        <br>
+                                        As a member of the infra team, I played an instrumental role in developing
+                                        multi-cloud services like
+                                        Nandi - a powerful tool for performing CRUD operations on secrets shared across
+                                        the company. I
+                                        also automated SOC2 audit reports using open-source tools like Cloud Custodian
+                                        and created an
+                                        automated AWS Cloud cost report that analyzed increasing costs across various
+                                        CIQ systems and
+                                        AWS services, which resulted in significant cost reductions for our teams.
+                                        Additionally, I worked on
+                                        developing Terraform modules to streamline and accelerate the deployment of our
+                                        infrastructure.
+                                        Through these contributions, I was able to showcase my technical skills and help
+                                        our company stay at
+                                        the forefront of cutting-edge technology.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 mt-4">
+                        <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#staticBackdrop3">
+                            <div class="card servicesText bg-dark">
+                                <div class="card-body bg-dark">
+                                    <img class="card-img-top embed-responsive-item" src="images/zeda.gif" />
+                                </div>
+                            </div>
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="staticBackdrop3" data-bs-backdrop="static" data-bs-keyboard="false"
+                            tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                                <div class="modal-content bg-dark">
+                                    <div class="modal-header border-0">
+                                        <h5 class="modal-title text-warning" id="staticBackdropLabel">SDE Intern At
+                                            Zeda.io</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body text-white">
+                                        I had the pleasure of working on Zeda.io - a
+                                        cutting-edge project
+                                        management system designed for businesses. In this role, I worked closely with
+                                        top-level management
+                                        to create a Minimum Viable Product (MVP) that met the unique needs of the
+                                        company. My
+                                        responsibilities included coding the backend APIs, ensuring seamless integration
+                                        with front-end
+                                        systems, and providing support throughout the development process. Through this
+                                        project, I was able to
+                                        hone my technical skills and collaborate with industry leaders to deliver a
+                                        top-quality product
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>            
-        </div>                                                                <!-- About ends here -->
-
-
-        
-        <div id="work_scroll" class="pages">                                  <!-- Work starts here -->
-            <div class="container main">
+            </div>
+        </section>
+        <!-- game section-->
+        <section id="game" class="p-4">
+            <div class="container bg-dark text-white">
+                <h1 class="text-center text-info">Try not to touch the walls :D</h1>
                 <div class="row">
-                    <div class="col-md-6" id="work_left">
-                        <div class="item"><img class="img-responsive img-rabbit" src="assets/images/work.jpg"></div>
-                    </div>
+                    <canvas id="stage"></canvas>
+                </div>
+            </div>
+        </section>
 
-                    <div class="col-md-6" id="work_right">
-                        <a href="#index" class="btn btn-rabbit back"> <i class="fa fa-angle-left" aria-hidden="true"></i> Back to Home </a>
-                        <div id="watermark">
-                            <h3 class="page-title" text-center>Work</h3>
-                            <div class="marker">w</div>
-                        </div>
-                        <p class='subtitle'>This is a selection of my development work. I've been involved in many different types of project.
-                        </p>
-                        <hr>
-                        <ul style="list-style-type:square">
-                            <h3><li>coala-json</li></h3>
-                        </ul>
-                        <p class="info">Conversion & Reporting of Test Result Formats like JUnit, TAP.
-                             The mapping isn’t exact, but the benefits of using the test result format are tight integration with various CI/CD systems.
-                        </p>
-                        <p class="info"><u><a href="https://pypi.org/project/coala-json/">Package Link</a></u>&nbsp;&nbsp;&nbsp;&nbsp;<u><a href="http://projects.coala.io/GSoC/2019/StatusReport/chay2199.html">Project Report</a></u>
-                            &nbsp;&nbsp;&nbsp;&nbsp;<u><a href="https://coala-json.readthedocs.io/en/latest/">Documentation</a></u>
-                        </p>
-                        <hr>
-                        <ul style="list-style-type:square">
-                            <h3><li>Automate the Learning with Jenkins</li></h3>
-                        </ul>
-                        <p class="info">Automate model training depending on accuracy.<br><b>Technology Stack:</b> Python, Keras, Docker, Jenkins</p>
-                        <p class="info">
-                            <a href="https://www.linkedin.com/pulse/automate-learning-using-docker-jenkins-chaitanya-tyagi/">Article Link</a>
-                        </p>    
-                        <hr>
-                        <ul style="list-style-type:square">
-                            <h3><li>gameToDebug</li></h3>
-                        </ul>
-                        <p class="info">A graphical C++ debugger that displays which functions you are calling, 
-                            what values does your variables and data structures have using beautiful graphics.
-                        </p>
+        <!-- portfolio section-->
+        <section id="portfolio">
+            <div class="container bg-dark text-white">
+                <h1 class="text-center text-warning">Top Articles</h1>
+                <div class="row">
+                    <div class="col-lg-4 mt-4 text-center">
+                        <a href="https://www.linkedin.com/pulse/authorization-using-casbin-go-chaitanya-tyagi/?trackingId=KDvak3JQT0eBfY8Lmajo6g%3D%3D"
+                            class="stretched-link link-light">
+                            <div class="card cards servicesText bg-dark">
+                                <div class="card-body bg-dark">
+                                    <img class="card-img-bottom embed-responsive-item" src="images/go-casbin.jpg" />
+                                    Authentication verifies the identity of a user or service, and authorization
+                                    determines their access rights.
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 mt-4 text-center">
+                        <a href="https://medium.com/@chay2199/getting-into-gsoc-2019-ebbabd484abb"
+                            class="stretched-link link-light">
+                            <div class="card cards servicesText bg-dark">
+                                <div class="card-body bg-dark">
+                                    <img class="card-img-bottom embed-responsive-item" src="images/coala-gsoc.webp" />
+                                    My project with my and my mentor’s name alongside. I cried still, but
+                                    the tears were of pure joy!
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 mt-4 text-center">
+                        <a href="https://www.geeksforgeeks.org/introduction-to-pygame/"
+                            class="stretched-link link-light">
+                            <div class="card cards servicesText bg-dark">
+                                <div class="card-body bg-dark">
+                                    <img class="card-img-bottom embed-responsive-item" src="images/pygame.jpg" />
+                                    Game development includes mathematics, logic, physics, AI, and much more and it can
+                                    be amazingly fun.
+                                </div>
+                            </div>
+                        </a>
                     </div>
                 </div>
-            </div>    
-        </div>                                                                 <!-- Work ends here  -->
-        
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-        <script src="assets/js/bootstrap.min.js"></script>
-        <script src="assets/js/script.js"></script>
-    </body>
+            </div>
+        </section>
+        <!-- contact section-->
+        <section id="contact">
+            <div class="container mt-3 contactContent bg-dark text-white">
+                <h1 class="text-center text-warning">Let's have a drink together ;)</h1>
+
+                <div class="row mt-4">
+                    <div class="col-lg-4"></div>
+                    <div class="col-lg-4">
+                        <!-- to edit google map goto https://www.embed-map.com type your location, generate html code and copy the html  -->
+                        <div style="max-width:100%;overflow:hidden;color:red;width:500px;height:500px;">
+                            <div id="embedmap-canvas" style="height:100%; width:100%;max-width:100%;">
+                                <iframe style="height:100%;width:100%;border:0;" frameborder="0"
+                                    src="https://www.google.com/maps/embed/v1/place?q=Srinivasa+signature+apartment,+Bellandur,+Bengaluru,+Karnataka,+India&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8">
+                                </iframe>
+                            </div>
+                            <a class="googlemaps-html" href="https://www.embed-map.com"
+                                id="get-data-forembedmap">https://www.embed-map.com</a>
+                            <style>
+                                #embedmap-canvas img {
+                                    max-width: none !important;
+                                    background: none !important;
+                                    font-size: inherit;
+                                    font-weight: inherit;
+                                }
+                            </style>
+                        </div>
+                    </div>
+                    <div class="col-lg-4"></div>
+                </div>
+            </div>
+        </section>
+        <!-- footer section-->
+        <footer id="footer">
+            <div class="container-fluid">
+                <!-- social media icons -->
+                <div class="social-icons mt-4">
+                    <a href="https://www.gitlab.com/chay2199" target="_blank"><i class="fab fa-gitlab"></i></a>
+                    <a href="https://instagram.com/thefreeelfd.bby?igshid=MzRlODBiNWFlZA==" target="_blank"><i
+                            class="fab fa-instagram"></i></a>
+                    <a href="https://www.twitter.com/chay2199" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.linkedin.com/in/chaitanya-tyagi-03a560174/" target="_blank"><i
+                            class="fab fa-linkedin"></i></a>
+                    <a href="https://www.github.com/chay2199" target="_blank"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- load javascript after loading all html content -->
+    <script src="script/script.js"></script>
+
+</body>
+
 </html>
