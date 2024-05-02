@@ -1,0 +1,23 @@
+.posts {
+  width: 90%;
+  max-width: 60rem;
+  margin: var(--size-8) auto;
+}
+
+.posts h1 {
+  font-size: var(--size-8);
+  color: var(--color-grey-800);
+  text-align: center;
+}
+
+.posts img {
+  width: 100px; /* Set a fixed width for each image */
+  height: 100px; /* Set a fixed height for each image */
+  object-fit: cover; /* Maintain aspect ratio while covering the container */
+}
+
+@media (min-width: 768px) {
+  .posts h1 {
+    font-size: var(--size-16);
+  }
+}
